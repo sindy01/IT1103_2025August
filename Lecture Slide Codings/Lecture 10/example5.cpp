@@ -13,13 +13,13 @@ struct Employee
     float Salary;
 };
 
-Employee getEmployeeData();
+Employee getEmployeeData(Employee emp);
 void printEmployeeData(Employee emp);
 
 int main()
 {
     // Call getEmployeeData() to get employee details
-    Employee employee1 = getEmployeeData();
+    Employee employee1 = getEmployeeData(employee1);
 
     // Call printEmployeeData() to print employee details
     printEmployeeData(employee1);
@@ -27,10 +27,9 @@ int main()
     return 0;
 }
 
-Employee getEmployeeData()
+Employee getEmployeeData(Employee emp)
 {
-    Employee emp;
-
+    
     cout << "Enter Employee ID: ";
     cin >> emp.EmpID;
 
